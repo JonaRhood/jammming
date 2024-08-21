@@ -141,20 +141,7 @@
 }
 
 @media only screen and (max-width: 480px) {
-  /* .video-bg {
-    right: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: visible;
-
-
-    video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  } */
+ 
   .backgroundVideo {
     position: fixed; /* O absolute, dependiendo de tu layout */
     top: 0;
