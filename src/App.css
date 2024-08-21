@@ -200,7 +200,7 @@
   .AppContainer {
     margin: 10% 0;
     height: 120%;
-    overflow: visible;
+    overflow: hidden;
     display: flex;
     position: absolute;
   }
