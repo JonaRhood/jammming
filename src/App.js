@@ -61,7 +61,7 @@ function App() {
               Your browser does not support the video tag.
             </video>
             :
-            <video autoPlay loop playsInline className={styles.backgroundVideo}>
+            <video autoPlay loop muted playsInline className={styles.backgroundVideo}>
                 <source src={backvid} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
