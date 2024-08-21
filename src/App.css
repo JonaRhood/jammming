@@ -164,6 +164,7 @@
     object-fit: cover; /* Asegúrate de que cubra todo el fondo */
     z-index: -1; /* Asegúrate de que esté detrás de otros elementos */
     overflow: visible;
+  }
 
 
   .video-bg:before {
