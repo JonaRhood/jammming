@@ -16,7 +16,7 @@ function App() {
 
   const [Night, setNight] = useState(false);
   const [mozilla, setMozilla] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 480);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 481);
 
   const sUsrAg = navigator.userAgent;
 
@@ -32,7 +32,7 @@ function App() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 480);
+      setIsMobile(window.innerWidth < 481);
     }
 
     window.addEventListener('resize', handleResize);
@@ -56,12 +56,12 @@ function App() {
             ${Night ? "" : "videoNight"}
             `}>
               {isMobile ? 
-              <video autoPlay loop muted playsInline className={styles.backgroundVideo}>
+              <video autoPlay muted playsInline className={styles.backgroundVideo}>
               <source src={backvid} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             :
-            <video autoPlay muted playsInline className={styles.backgroundVideo}>
+            <video autoPlay loop playsInline className={styles.backgroundVideo}>
                 <source src={backvid} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
