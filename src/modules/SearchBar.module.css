@@ -1,0 +1,159 @@
+
+.divSearch {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.divBoth {
+    display: flex;
+    width: 40%;
+    height: 35%;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 15px;
+    transition-property: background-color, color;
+    transition-duration: .2s;
+    transition-timing-function: ease;
+    outline: none;
+    transition: outline ease 0.5s;
+}
+
+.divBothNight {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.divBothNight:focus-within {
+    outline: 0.1px solid rgba(255,255,255,0.3) !important;
+}
+
+.divSearchIcon {
+    display: flex;
+    width: 7%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    
+}
+
+.divSearchIconNight {
+    color: rgba(255,255,255,0.5);
+}
+
+.divSearchInput {
+    display: flex;
+    width: 86%;
+}
+
+.inputBox {
+    font-size: 1.6rem;
+    border: 0.5px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.0);
+}
+
+.inputBoxNight {
+    color: rgba(255,255,255,0.8);
+}
+
+.inputBox:focus {
+    outline: none;
+}
+
+.divSearchEnterIcon {
+    display: flex;
+    width: 7%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+
+    span {
+        display: flex;
+        width: 60%;
+    }
+}
+
+.divSearchEnterIcon:hover {
+    cursor: pointer;
+}
+
+.divSearchEnterIconNight svg {
+    filter: brightness(0) invert(1); /* Convierte todo a blanco */
+    opacity: 0.6;
+}
+
+@media only screen and (max-width: 1160px) {
+    .divBoth {
+        height: 35%;
+        width: 50%;
+    }
+
+    .inputBox {
+        font-size: 1.3rem;
+     }
+}
+
+@media only screen and (max-width: 1050px) {
+    .inputBox {
+        font-size: 1.2rem;
+     }
+}
+
+@media only screen and (max-width: 770px) {
+    .inputBox {
+        font-size: 1.2rem;;
+     }
+
+     .divBoth {
+        height: 30%;
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .inputBox {
+        font-size: 1rem;;
+     }
+}
+
+@media only screen and (max-width: 480px) {
+    .divBoth {
+        height: 30%;
+        width: 80%;
+    }
+
+    .divSearchIcon {
+        margin: 0 5%;
+    }
+
+    .inputBox {
+       font-size: 1rem;;
+    }
+
+    .divSearchEnterIcon {
+        width: 10%;
+    }
+}   
+
+@media only screen and (max-width: 300px) {
+    .divBoth {
+        height: 35%;
+        width: 60%;
+    }
+
+    .divSearchIcon {
+        
+        margin: 0 5%;
+    }
+
+    .inputBox {
+        
+    }
+}
+
+
+
+

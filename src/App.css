@@ -1,0 +1,221 @@
+.video-bg {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.video-bg:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+
+}
+
+.videoNight:before {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.72) 0%, rgb(255 255 255 / 45%) 100%) !important;
+  backdrop-filter: saturate(3) !important;
+}
+
+.firstDiv {
+  margin: 0;
+  box-sizing: 0;
+  font-size: 16px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  color: rgb(53, 53, 53);
+}
+
+.AppContainer {
+  position: fixed;
+  width: 90%;
+  height: 90%;
+  background-color: rgba(255 255 255 / 31%);
+  display: flex;
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-sizing: 0px;
+  margin: 3%;
+  flex-wrap: wrap;
+  -webkit-backdrop-filter: blur(20px);
+  transition-property: background-color, color;
+  transition-duration: .2s;
+  transition-timing-function: ease;
+}
+
+.AppContainerNight {
+  background-color: rgba(0 0 0 / 31%);
+}
+
+.searchBar {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  border-radius: 20px 20px 0 0;
+  box-sizing: 0px;
+}
+
+.trackList {
+  width: 50%;
+  height: 85%;
+  background-color: rgba(255 255 255 / 31%);
+  display: flex;
+  border-radius: 0 0 0 20px;
+  box-sizing: 0px;
+  transition-property: background-color, color;
+  transition-duration: .2s;
+  transition-timing-function: ease;
+}
+
+.trackListNight {
+  background-color: rgba(0 0 0 / 31%);
+}
+
+.toMyList {
+  width: 50%;
+  height: 85%;
+  background-color: rgba(255 255 255 / 31%);
+  display: flex;
+  border-radius: 0 0 20px 0;
+  box-sizing: 0px;
+  transition-property: background-color, color;
+  transition-duration: .2s;
+  transition-timing-function: ease;
+}
+
+.toMyListNight {
+  background-color: rgba(0 0 0 / 31%);
+}
+
+.divButtonGoUp {
+  display: none;
+  position: fixed;
+  width: 10vw;
+  height: 10vw;
+  bottom: 5%;
+  right: 5%;
+  z-index: 999;
+  border-radius: 999px;
+  justify-content: center;
+  align-items: center;
+  font-size: 4vw;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 1);
+  transition-property: background-color, color;
+  transition-duration: .6s;
+  transition-timing-function: ease;
+  color: rgba(0,0,0,0.8);
+}
+
+.divButtonGoUpNight {
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 1490px) {
+  .AppContainer {
+    width: 75%;
+    overflow: visible;
+    display: flex;
+    position: absolute;
+  }
+}
+
+@media only screen and (max-width: 770px) and (max-height: 920px) {
+  .AppContainer {
+    height: 94%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .video-bg {
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .video-bg:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .AppContainer {
+    margin: 10% 0;
+    height: 160%;
+    overflow: visible;
+    display: flex;
+    position: absolute;
+  }
+
+  .searchBar {
+    height: 10%;
+  }
+
+  .trackList {
+    width: 100%;
+    height: 90%;
+    border-radius: 0 0 25px 25px;
+  }
+
+  .toMyList {
+    display: none;
+  }
+
+  .divButtonGoUp {
+    display: flex !important;
+  }
+
+}
+
+@media only screen and (max-width: 300px) {
+  .AppContainer {
+    margin: 10% 0;
+    height: 120%;
+    overflow: visible;
+    display: flex;
+    position: absolute;
+  }
+
+  .searchBar {
+    height: 10%;
+  }
+
+  .trackList {
+    width: 100%;
+    height: 90%;
+    border-radius: 0 0 25px 25px;
+  }
+
+  .toMyList {
+    display: none;
+  }
+}
+

@@ -1,0 +1,821 @@
+.searchResults {
+    position: absolute;
+    left: 0;
+    margin: 0% 2%;
+    bottom: 0; /* Ajusta 10vh al tamaño relativo que deseas y agrega una constante (10px en este caso) para afinar la posición */
+    display: flex;
+    width: 47%;
+    height: calc(10vh + 73.75%); /* Asegura que la altura sea relativa a la pantalla menos un margen */
+    justify-content: flex-start;
+    overflow: hidden;
+    overflow-y: auto;
+    text-overflow: ellipsis;
+    transition-property: color, top;
+    transition-duration: .2s;
+    transition-timing-function: ease;
+}
+
+
+.searchResults::-webkit-scrollbar {
+    width: 0.5vw;
+    /* Ancho del scrollbar */
+}
+
+.searchResults::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Color de la pista */
+}
+
+.searchResults::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Color del "thumb" */
+    border-radius: 6px;
+    /* Redondear los bordes del "thumb" */
+    transition-property: background-color;
+    transition: background-color ease .3s;
+}
+
+.searchResults::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Color del "thumb" al pasar el mouse */
+}
+
+.searchResultsNight {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.searchResultsNight::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    /* Color del "thumb" */
+}
+
+.searchResultsNight::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    /* Color del "thumb" */
+}
+
+.searchResultsMozilla {
+    scrollbar-width: thin; /* Ancho del scrollbar (thin o auto) */
+    scrollbar-color: rgba(255, 255, 255, 0.7) rgba(255, 255, 255, 0.1); /* Color del thumb y de la pista */
+}
+
+.searchResultsMozillaNight {
+    scrollbar-color: rgba(0, 0, 0, 0.7) rgba(255, 255, 255, 0.1); /* Color del thumb y de la pista en modo nocturno */
+}
+
+/* Estilos para el hover en Firefox */
+.searchResultsMozilla::-moz-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.9); /* Firefox no soporta esto */
+}
+
+.searchResultsMozillaNight::-moz-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Firefox no soporta esto */
+}
+
+
+.divCreateList {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.trackContainer {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    border: 0.5px solid white;
+    border-left: none;
+    transition-property: border, background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease;
+}
+
+.trackContainerNight {
+    border: 0.3px solid rgba(255, 255, 255, 0.2);
+    border-left: none;
+}
+
+.trackContainerNight:hover {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.trackContainer:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.trackContainer:active {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.divImg {
+    display: flex;
+    width: 25%;
+}
+
+.trackImgContainer {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.trackImgContainer img {
+    display: flex;
+    margin: 20%;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all ease .5s;
+    width: 7vw;
+}
+
+.searchResults .divCreateList .divInfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: ease all .2s;
+    margin-left: 2vw;
+}
+
+
+.playListMaker .divCreateList .divInfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: ease all .2s;
+    margin-left: 1vw;
+}
+
+.playListMaker .divCreateList .trackTitle {
+    line-height: 1.2;
+}
+
+.trackTitle {
+    display: flex;
+    font-family: "Poppins Bold";
+    font-size: 1.3rem;
+    text-overflow: ellipsis;
+    line-height: 1;
+    margin-bottom: 2%;
+}
+
+.trackTitle::-webkit-scrollbar {
+    width: 0.2vw;
+    /* Ancho del scrollbar */
+}
+
+.trackTitle::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Color de la pista */
+}
+
+.trackTitle::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Color del "thumb" */
+    border-radius: 3px;
+    /* Redondear los bordes del "thumb" */
+}
+
+.trackTitle::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.trackTitleNight::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    /* Color del "thumb" */
+}
+
+.trackTitleNight::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    /* Color del "thumb" */
+}
+
+.trackTitle:hover {
+    animation-name: reveal;
+    animation-timing-function: ease;
+    animation-duration: 60s;
+    animation-delay: 1.5s;
+}
+
+.artistsContainer {
+    display: flex;
+    font-family: "Poppins";
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+.artistsContainer::-webkit-scrollbar {
+    width: 0.2vw;
+    /* Ancho del scrollbar */
+}
+
+.artistsContainer::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Color de la pista */
+}
+
+.artistsContainer::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Color del "thumb" */
+    border-radius: 3px;
+    /* Redondear los bordes del "thumb" */
+}
+
+.artistsContainer::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.artistsContainerNight::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    /* Color del "thumb" */
+}
+
+.artistsContainerNight::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    /* Color del "thumb" */
+}
+
+.artistsContainer:hover {
+    animation-name: reveal;
+    animation-timing-function: ease;
+    animation-duration: 60s;
+    animation-delay: 2s;
+}
+
+.albumContainer {
+    display: flex;
+    font-family: "Poppins Thin";
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+.albumContainer::-webkit-scrollbar {
+    width: 0.2vw;
+    /* Ancho del scrollbar */
+}
+
+.albumContainer::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Color de la pista */
+}
+
+.albumContainer::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Color del "thumb" */
+    border-radius: 3px;
+    /* Redondear los bordes del "thumb" */
+}
+
+.albumContainer::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.albumContainerNight::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    /* Color del "thumb" */
+}
+
+.albumContainerNight::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    /* Color del "thumb" */
+}
+
+.albumContainer:hover {
+    animation-name: reveal;
+    animation-timing-function: ease;
+    animation-duration: 60s;
+    animation-delay: 2s;
+}
+
+.durationContainer {
+    display: flex;
+    font-family: "Poppins Thin";
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+}
+
+.durationContainer span {
+    letter-spacing: 0;
+}
+
+
+.divArrow {
+    display: flex;
+    position: relative;
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    font-size: 1rem;
+}
+
+.divPlaylistName {
+    width: 47%;
+    position: fixed;
+    display: flex;
+    right: 0;
+    height: 7%;
+    margin: 1% 2%;
+    background-color: rgba(255, 255, 255, 0.3);
+    justify-content: center;
+    outline: none;
+    transition: outline ease 0.5s;
+}
+
+.divPlaylistNight {
+    background-color: rgba(0, 0, 0, 0.4);
+
+    input {
+        color: rgba(255, 255, 255, 0.8);
+    }
+}
+
+.divPlaylistNight:focus-within {
+    outline: 0.1px solid rgba(255, 255, 255, 0.3);
+}
+
+.divPlaylistName input {
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+    font-size: 1.6rem;
+}
+
+.divPlaylistName input:focus {
+    outline: none;
+}
+
+.divListClickedEmpty {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.playListMaker {
+    position: fixed;
+    right: 0;
+    margin: 2% 0;
+    top: 22%;
+    display: flex;
+    width: 49%;
+    height: 60%;
+    justify-content: flex-start;
+    overflow: hidden;
+    overflow-y: auto;
+    text-overflow: ellipsis;
+}
+
+.playListMaker .divImg img {
+    width: 5vw;
+}
+
+.playListMaker::-webkit-scrollbar {
+    width: 0.5vw;
+    /* Ancho del scrollbar */
+}
+
+.playListMaker::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Color de la pista */
+}
+
+.playListMaker::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Color del "thumb" */
+    border-radius: 6px;
+    /* Redondear los bordes del "thumb" */
+}
+
+.playListMaker::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.playListMakerNight::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    /* Color del "thumb" */
+}
+
+.playListMakerNight::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    /* Color del "thumb" */
+}
+
+.playListMaker .divArrow {
+    width: 20%;
+}
+
+.searchResults .divButton {
+    display: flex;
+    position: fixed;
+    width: 50%;
+    height: 14.5%;
+    bottom: 0;
+    right: 0;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.searchResults .divButton button {
+    display: flex;
+    margin: 0;
+    width: 60%;
+    border: none;
+    border-radius: 300px;
+    background-color: rgb(58, 109, 240, 1);
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+
+}
+
+
+.divButton button h2 {
+    width: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 5%;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.searchResults .divButton button:hover {
+    background-color: rgb(48, 99, 228);
+    cursor: pointer;
+}
+
+.divButtonEmpty {
+    display: none;
+}
+
+@keyframes reveal {
+    0% {
+        white-space: wrap;
+        overflow-y: auto;
+    }
+
+    100% {
+        white-space: wrap;
+        overflow-y: auto;
+    }
+}
+
+.divSuccess {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 10rem;
+    color: rgba(0, 185, 52, 0.6);
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    transition: ease all .2s;
+}
+
+.divSuccess h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 2%;
+}
+
+.divSuccessTrue {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* LOADER */
+.divLoading {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.loadingSvg {
+    transform-origin: center;
+    animation: rotate4 2s linear infinite;
+    width: 5rem;
+}
+
+.loadingCircle {
+    fill: none;
+    stroke: hsla(0, 0%, 44%, 0.4);
+    stroke-width: 2;
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    animation: dash4 1.5s ease-in-out infinite;
+}
+
+.loadingCircleNight {
+    stroke: hsla(0, 0%, 100%, 0.4);
+}
+
+@keyframes rotate4 {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes dash4 {
+    0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+    }
+
+    50% {
+        stroke-dasharray: 90, 200;
+        stroke-dashoffset: -35px;
+    }
+
+    100% {
+        stroke-dashoffset: -125px;
+    }
+}
+
+
+/* Media Queries */
+
+@media only screen and (min-width: 1490px) {
+     .searchResults {
+        width: 36svw;
+    }
+
+    .trackImgContainer img {
+        width: 6.5rem;
+    }
+    
+    .playListMaker .trackImgContainer img {
+        width: 5rem;
+    }
+  }
+
+@media only screen and (max-width: 1490px) {
+     .searchResults {
+       
+    } 
+
+    .divPlaylistName input {
+        font-size: 1.5rem;
+    }
+
+    .divButton {
+        width: 50% !important;
+        height: 15.2% !important;
+    }
+
+}
+
+@media only screen and (max-width: 1366px) {
+    /* .searchResults {
+        top: 12% !important;
+    } */
+
+    .playListMaker .trackTitle {
+        font-size: 1.2rem;
+    }
+
+    .playListMaker .artistsContainer {
+        font-size: 0.8rem;
+    }
+
+    .playListMaker .albumContainer {
+        font-size: 0.6rem
+    }
+
+    .playListMaker .durationContainer {
+        font-size: 0.6rem
+    }
+
+    .divSuccess {
+        font-size: 7rem;
+    }
+
+    .divSuccess h3 {
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+
+    .divPlaylistName input {
+        font-size: 1.3rem;
+    }
+
+}
+
+@media only screen and (max-width: 1160px) {
+
+}
+
+@media only screen and (max-width: 1050px) {
+
+    .trackTitle {
+        line-height: 1.2;
+    }
+
+    .albumContainer {
+        line-height: 1.1;
+    }
+
+    .durationContainer {
+        line-height: 1.1;
+    }
+
+    .divButton button h2 {
+       font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .searchResults {
+        height: calc(10vh + 74.2%);
+    }
+    .trackTitle {
+        font-size: 1.1rem;
+    }
+
+    .artistsContainer {
+        font-size: 0.7rem;
+    }
+
+    .albumContainer {
+        font-size: 0.6rem;
+    }
+
+    .durationContainer {
+        font-size: 0.6rem;
+    }
+
+    .playListMaker .trackTitle {
+        font-size: 1.1rem;
+    }
+
+    .playListMaker .artistsContainer {
+        font-size: 0.7rem;
+    }
+
+    .playListMaker .albumContainer {
+        font-size: 0.6rem;
+    }
+
+    .playListMaker .durationContainer {
+        font-size: 0.6rem;
+    }
+
+    .divPlaylistName {
+        height: 5%;
+    }
+
+    .trackImgContainer img {
+        width: 8vw;
+    }
+
+    .divPlaylistName input {
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+
+}   
+
+@media only screen and (max-width: 530px) {
+    .divButton button h2 {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .searchResults {
+        margin: 0;
+        width: 100%;
+        top: 10% !important;
+        height: 35%;
+    }
+
+    .playListMaker {
+        margin: 0;
+        bottom: 0;
+        top: 50%;
+        width: 100%;
+        height: 38%;
+    }
+
+    .divPlaylistName {
+        width: 100%;
+        margin: 0;
+        top: 45%;
+    }
+
+    .trackImgContainer img {
+        width: 15vw;
+    }
+
+    .trackTitle {
+        font-size: 1.1rem !important;
+    }
+
+    .artistsContainer {
+        font-size: 0.8rem;
+    }
+
+    .albumContainer {
+        font-size: 0.7rem;
+    }
+
+    .durationContainer {
+        font-size: 0.7rem;
+    }
+
+    .searchResults .divCreateList .trackContainer {
+        height: auto;
+    }
+
+    .playListMaker .divCreateList .trackContainer {
+        height: auto;
+    }
+
+    .divImg {
+        width: 40%;
+    }
+
+    .playListMaker .divImg img {
+        width: 13vw;
+    }
+
+    .divPlaylistName {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        border-left: solid 20px rgba(255, 255, 255, 0.9);
+    }
+
+    .divPlaylistNight {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        border-left: solid 20px rgba(0, 0, 0, 0.7);
+        
+    }
+
+    .divPlaylistName input {
+        font-size: 1.2rem;
+    }
+
+    .divArrow {
+        font-size: 2.5vw;
+    }
+
+    .searchResults .divButton {
+        width: 100% !important;
+        height: 11.5% !important;
+    }
+
+    .divButton button h2 {
+        font-size: 1.2rem;
+    }
+
+    .searchResults::-webkit-scrollbar {
+        width: 1vw;
+    }
+
+    .playListMaker::-webkit-scrollbar {
+        width: 1vw;
+    }
+
+    .divSuccess {
+        font-size: 20vw;
+    }
+
+    .divSuccess h3 {
+        font-size: 6vw;
+        ;
+    }
+
+
+}
+
+@media only screen and (max-width: 300px) {
+    
+}
+
+/* MEDIA QUERIE HEIGHT */

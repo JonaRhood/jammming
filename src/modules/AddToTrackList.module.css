@@ -1,0 +1,127 @@
+.searchResults {
+    position: fixed;
+    right: 0;
+    margin: 2% 0;
+    top: 11.4%;
+    display: flex;
+    width: 47%;
+    height: 84.8%;
+    justify-content: flex-start;
+    overflow: hidden;
+    overflow-y: auto;
+    text-overflow: ellipsis;
+}
+
+.searchResults::-webkit-scrollbar-track {
+    border-radius: 15px;
+    color: red;
+    scrollbar-width: 15px;
+    scrollbar-color: red;
+}
+
+.divCreateList {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.trackContainer {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 20%;
+    border: 0.5px solid white;
+    border-left: none;
+}
+
+.trackContainer:hover {
+    background-color: rgba(255,255,255,0.2);
+    cursor: pointer;
+}
+
+.divImg {
+    display: flex;
+    width: 25%
+}
+
+.trackImgContainer {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.trackImgContainer img {
+    display: flex;
+    margin: 8%;
+    box-shadow: 3px 5px 10px rgba(0,0,0,0.2);
+}
+
+.divInfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.trackTitle {
+    display: flex;
+    font-family: "Poppins Bold";
+    font-size: 1.2rem;
+    text-overflow: ellipsis;
+}
+
+.trackTitle::-webkit-scrollbar {
+    width: 50px;
+}
+
+.trackTitle:hover {
+    animation-name: reveal;
+    animation-timing-function: ease;
+    animation-duration: 60s;
+    animation-delay: 2s;
+}
+
+@keyframes reveal {
+    0%
+    {
+        white-space: wrap;
+        overflow-y: auto;
+        
+    }
+    100%
+    {
+        white-space: wrap;
+        overflow-y: auto;
+    }
+}
+
+.artistsContainer {
+    display: flex;
+    font-family: "Poppins Thin";
+    font-size: 0.8rem;
+}
+
+.artistsContainer:hover {
+    animation-name: reveal;
+    animation-timing-function: ease;
+    animation-duration: 60s;
+    animation-delay: 2s;
+}
+
+
+
+.divArrow {
+    display: flex;
+    position: relative;
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+
+}

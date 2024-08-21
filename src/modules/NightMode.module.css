@@ -1,0 +1,88 @@
+.divNightMode {
+    display: flex;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 2.5vw;
+    height: 2.5vw;
+    top: 10%;
+    right: 8%;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999px;
+    cursor: pointer;
+    transition-property: background-color, color;
+    transition-duration: .6s;
+    transition-timing-function: ease;
+}
+
+.divNightMode:hover {
+    filter: invert(0.1)
+}
+
+
+.divLogoNightMode {
+    display: flex;
+    font-size: 1.5vw;
+}
+
+.NightMode {
+    color: rgb(255, 225, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 1490px) {
+    .divNightMode {
+        top: 90%;
+        background-color: rgba(255, 255, 255, 1);
+        right: 4%;
+        width: 3rem;
+        height: 3rem;
+        box-shadow: 1px 2px 10px rgba(0,0,0,0.2);
+    }
+
+    .divLogoNightMode {
+        font-size: 2rem;
+    }
+
+    .NightMode {
+        background-color: rgba(0, 0, 0, 1);
+    }
+  }
+
+@media only screen and (max-width: 1050px) {
+    .divNightMode {
+        top: 9.5% !important;
+    }
+}
+
+@media only screen and (max-width: 770px) and (max-height: 920px)  {
+    .divNightMode {
+        top: 7.8% !important;
+        right: 10%;
+        width: 4vw;
+        height: 4vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .divNightMode {
+        top: 5% !important;
+        background-color: rgba(255, 255, 255, 1);
+        right: 5%;
+        width: 10vw;
+        height: 10vw;
+        box-shadow: 1px 2px 10px rgba(0,0,0,0.2);
+    }
+
+    .divLogoNightMode {
+        font-size: 4.5vw;
+    }
+
+    .NightMode {
+        background-color: rgba(0, 0, 0, 1);
+    }
+}
+
