@@ -4,11 +4,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
-<<<<<<< HEAD
-=======
 
->>>>>>> 1914fdfc3f58e54e954e14eb10987d2179cf8a20
 
   video {
     width: 100%;
@@ -198,10 +194,9 @@
 }
 
 @media only screen and (max-width: 300px) {
-  /* .AppContainer {
+  .AppContainer {
     margin: 10% 0;
     height: 120%;
-    overflow: hidden;
     display: flex;
     position: absolute;
   }
@@ -218,6 +213,6 @@
 
   .toMyList {
     display: none;
-  } */
+  }
 }
 
