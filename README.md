@@ -10,7 +10,7 @@
 
 Jamming is a React project developed by students in Codecademy’s Full Stack course. It’s a playlist creator that utilizes Spotify’s search API, allowing you to quickly create playlists directly from your browser.
 
-Link to live project: <a href="https://jonarhood.netlify.app">https://jonarhood.netlify.app</a>
+Link to live project: <a href="https://jonarhood.netlify.app">https://jonarhood.netlify.app</a><br/>
 <i>Note: You cannot create playlists due to Spotify's API Development Mode restrictions, but you can explore the app's UI and functionality.</i>
 
 
