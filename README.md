@@ -29,9 +29,9 @@ Link to live project: <a href="https://jonarhood.netlify.app">https://jonarhood.
 
 ## ✏️ &nbsp; Introduction
 
-Jamming is currently in development mode with the Spotify API. As a result, to use it with Spotify users, the project author must manually enter each user's email address in the Dashboard at [Spotify Developer Dashboard](https://developer.spotify.com/). 
+Jamming is currently in development mode with the Spotify API. As a result, to use the app with Spotify users, the project author must manually enter each user's email address in the [Spotify Developer Dashboard](https://developer.spotify.com/). 
 
-However, you can still access and test the app’s functionality and user interface without issues. Please note that visitors will not be able to create new playlists during this development phase.
+However, the app's functionality and user interface can still be accessed and tested without issues.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
