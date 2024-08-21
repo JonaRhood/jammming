@@ -39,7 +39,7 @@ function App() {
             ${"video-bg"}
             ${Night ? "" : "videoNight"}
             `}>
-              <video autoPlay loop muted playsinline className={styles.backgroundVideo}>
+              <video autoPlay loop muted playsinline preload className={styles.backgroundVideo}>
                 <source src={backvid} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
