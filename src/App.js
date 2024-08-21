@@ -40,7 +40,7 @@ function App() {
             ${Night ? "" : "videoNight"}
             `}>
               <video autoPlay loop muted playsInline className={styles.backgroundVideo}>
-                <source src="path/to/your/video.mp4" type="video/mp4" />
+                <source src={backvid} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>

@@ -88,7 +88,7 @@ function SearchBar({mozilla}) {
                         type="text"
                         id="searchBar"
                         mozactionhint="search"
-                        placeholder="Searchy by Artist, Song, or Album..."
+                        placeholder="Search by Artist, Song, or Album..."
                         value={textTyped}
                         onChange={handleTextTyping}
                         onKeyDown={handleSubmit}

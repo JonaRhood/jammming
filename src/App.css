@@ -4,6 +4,7 @@
   top: 0;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 
 
   video {
@@ -140,7 +141,7 @@
 }
 
 @media only screen and (max-width: 480px) {
-  .video-bg {
+  /* .video-bg {
     right: 0;
     top: 0;
     width: 100%;
@@ -153,7 +154,17 @@
       height: 100%;
       object-fit: cover;
     }
-  }
+  } */
+  .backgroundVideo {
+    position: fixed; /* O absolute, dependiendo de tu layout */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegúrate de que cubra todo el fondo */
+    z-index: -1; /* Asegúrate de que esté detrás de otros elementos */
+    overflow: visible;
+
 
   .video-bg:before {
     content: "";
@@ -197,6 +208,7 @@
   .AppContainer {
     margin: 10% 0;
     height: 120%;
+    overflow: hidden;
     display: flex;
     position: absolute;
   }
