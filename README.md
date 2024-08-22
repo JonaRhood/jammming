@@ -46,11 +46,11 @@ However, the app's functionality and user interface can still be accessed and te
 - Library displaying search results
 - Dedicated space for playlist creation
 - Input field to name the new playlist
-- utton to create the new playlist
+- Button to create the new playlist
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🛠️ &nbsp; <a id="installation">Installationl</a>
+## 🛠️ &nbsp; <a id="installation">Installation</a>
 
 1. Clone the repo:
 ```
@@ -82,8 +82,6 @@ npm install
 <br />
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
-
-<br />
 Jonathan Cano -  jonathancanofreta@gmail.com
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
