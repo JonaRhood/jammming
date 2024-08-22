@@ -79,7 +79,6 @@ npm install
 <a href="https://github.com/JonaRhood/react-projects/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=JonaRhood/react-projects" />
 </a>
-<br />
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
 Jonathan Cano -  jonathancanofreta@gmail.com
