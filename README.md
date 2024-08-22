@@ -80,7 +80,7 @@ npm install
   <img src="https://contrib.rocks/image?repo=JonaRhood/react-projects" />
 </a>
 
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![LinkedIn][linkedin-shield]][linkedin-url] <br />
 Jonathan Cano -  jonathancanofreta@gmail.com
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
