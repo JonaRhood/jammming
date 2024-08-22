@@ -1,3 +1,5 @@
+<a id="readme-top"></a>
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/247d54dc-717f-4147-baad-119824719ae7/deploy-status)](https://app.netlify.com/sites/jonarhood/deploys)
 
 # <img src="https://media.giphy.com/media/yFKokXsr5Bc6xVqpTt/giphy.gif?cid=790b76115vlx574153o2vl7h2bcacpl0li4cyqjr0kdr2756&ep=v1_gifs_search&rid=giphy.gif&ct=s" width="30">&nbsp; Jammming &nbsp; <img src="https://media.giphy.com/media/yFKokXsr5Bc6xVqpTt/giphy.gif?cid=790b76115vlx574153o2vl7h2bcacpl0li4cyqjr0kdr2756&ep=v1_gifs_search&rid=giphy.gif&ct=s" width="30">
@@ -21,8 +23,9 @@ Link to live project: <a href="https://jonarhood.netlify.app">https://jonarhood.
 
 1. [Introduction](#introduction)
 2. [Features](#features)
-3. [Technologies Used](#technologies-used)
-4. [Contact](#contact)
+3. [How to Install](#how-to-install)
+4. [Technologies Used](#technologies-used)
+5. [Contact](#contact)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -47,6 +50,14 @@ However, the app's functionality and user interface can still be accessed and te
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🛠️ &nbsp; How To Install
+
+```
+npm install
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## ⚙️ &nbsp; Technologies Used
 
 * [![REACT][REACT.js]][REACT-url]
@@ -57,15 +68,15 @@ However, the app's functionality and user interface can still be accessed and te
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🎫 &nbsp; Contact
+## 👤 &nbsp; Contact
 
 <a href="https://github.com/JonaRhood/react-projects/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=JonaRhood/react-projects" />
 </a>
-
-Jonathan Cano -  jonathancanofreta@gmail.com
 <br />
 [![LinkedIn][linkedin-shield]][linkedin-url]
+<br />
+Jonathan Cano -  jonathancanofreta@gmail.com
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
