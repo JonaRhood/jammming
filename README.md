@@ -1,6 +1,6 @@
 <a id="readme-top"></a>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/247d54dc-717f-4147-baad-119824719ae7/deploy-status)](https://app.netlify.com/sites/jonarhood/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/247d54dc-717f-4147-baad-119824719ae7/deploy-status)](https://app.netlify.com/sites/jammming-cp/deploys)
 
 # <img src="https://media.giphy.com/media/yFKokXsr5Bc6xVqpTt/giphy.gif?cid=790b76115vlx574153o2vl7h2bcacpl0li4cyqjr0kdr2756&ep=v1_gifs_search&rid=giphy.gif&ct=s" width="30">&nbsp; Jammming &nbsp; <img src="https://media.giphy.com/media/yFKokXsr5Bc6xVqpTt/giphy.gif?cid=790b76115vlx574153o2vl7h2bcacpl0li4cyqjr0kdr2756&ep=v1_gifs_search&rid=giphy.gif&ct=s" width="30">
 
@@ -12,7 +12,7 @@
 
 Jamming is a React project developed by students in Codecademy’s Full Stack course. It’s a playlist creator that utilizes Spotify’s search API, allowing you to quickly create playlists directly from your browser.
 
-Link to live project: <a href="https://jonarhood.netlify.app">https://jonarhood.netlify.app</a><br/>
+Link to live project: <a href="https://jammming-cp.netlify.app">https://jammming-cp.netlify.app</a><br/>
 <br/>
 <i><strong>Note:</strong> You cannot create playlists due to Spotify's API Development Mode restrictions, but you can explore the app's UI and functionality.</i>
 
