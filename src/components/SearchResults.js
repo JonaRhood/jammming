@@ -116,7 +116,7 @@ function SearchResults({ dataSpotify, searchBarMozilla }) {
             params.append("client_id", clientId);
             params.append("grant_type", "authorization_code");
             params.append("code", code);
-            params.append("redirect_uri", "https://jonarhood.netlify.app");
+            params.append("redirect_uri", "https://jammming-cp.netlify.app");
             params.append("code_verifier", verifier);
 
             const result = await fetch("https://accounts.spotify.com/api/token", {
