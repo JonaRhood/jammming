@@ -23,14 +23,14 @@ Link to live project: <a href="https://jonarhood.netlify.app">https://jonarhood.
 
 1. [Introduction](#introduction)
 2. [Features](#features)
-3. [How to Install](#how-to-install)
+3. [Installation](#installation)
 4. [Technologies Used](#technologies-used)
 5. [Contact](#contact)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## ✏️ &nbsp; Introduction
+## ✏️ &nbsp; <a id="introduction">Introduction</a>
 
 Jamming is currently in development mode with the Spotify API. As a result, to use the app with Spotify users, the project author must manually enter each user's email address in the [Spotify Developer Dashboard](https://developer.spotify.com/). 
 
@@ -38,7 +38,7 @@ However, the app's functionality and user interface can still be accessed and te
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 💿 &nbsp; Features
+## 💿 &nbsp; <a id="features">Features</a>
 
 - Spotify user authentication on app startup
 - Automatic Spotify token generation every 3,600,000 ms
@@ -50,15 +50,21 @@ However, the app's functionality and user interface can still be accessed and te
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🛠️ &nbsp; How To Install
+## 🛠️ &nbsp; <a id="installation">Installationl</a>
 
+1. Clone the repo:
+```
+git clone https://github.com/JonaRhood/jammming
+```
+
+2. Install NPM packages:
 ```
 npm install
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## ⚙️ &nbsp; Technologies Used
+## ⚙️ &nbsp; <a id="technologies-used">Technologies Used</a>
 
 * [![REACT][REACT.js]][REACT-url]
 * [![JAVASCRIPT][JAVASCRIPT.js]][JAVASCRIPT-url]
@@ -68,13 +74,15 @@ npm install
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 👤 &nbsp; Contact
+## 👤 &nbsp; <a id="contact">Contact</a>
 
 <a href="https://github.com/JonaRhood/react-projects/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=JonaRhood/react-projects" />
 </a>
 <br />
+
 [![LinkedIn][linkedin-shield]][linkedin-url]
+
 <br />
 Jonathan Cano -  jonathancanofreta@gmail.com
 
