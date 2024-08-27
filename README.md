@@ -53,13 +53,18 @@ However, the app's functionality and user interface can still be accessed and te
 ## 🛠️ &nbsp; <a id="installation">Installation</a>
 
 1. Clone the repo:
-```
+```bash
 git clone https://github.com/JonaRhood/jammming
 ```
 
 2. Install NPM packages:
-```
+```bash
 npm install
+```
+
+3. Run the application:
+```bash
+npm start
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
